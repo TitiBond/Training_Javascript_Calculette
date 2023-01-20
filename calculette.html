@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculette en ligne</title>
+</head>
+<body>
+    <div id="calculator">
+        <div id="result_container">
+            <input type="text" readonly="readonly" name="result" id="result_screen" value="0">
+        </div>
+        <div id="key_container">
+            <input class="key" value="CE" onclick="javascript : calculate('CE')"></input>
+            <input class="key" value="&larr;" onclick="javascript : calculate('\u2190')"></input>
+            <input class="key" value="%" onclick="javascript : calculate('%')"></input>
+            <input class="key" value="+" onclick="javascript : calculate('+')"></input>
+            <input class="key" value="7" onclick="javascript : calculate('7')"></input>
+            <input class="key" value="8" onclick="javascript : calculate('8')"></input>
+            <input class="key" value="9" onclick="javascript : calculate('9')"></input>
+            <input class="key" value="-" onclick="javascript : calculate('-')"></input>
+            <input class="key" value="4" onclick="javascript : calculate('4')"></input>
+            <input class="key" value="5" onclick="javascript : calculate('5')"></input>
+            <input class="key" value="6" onclick="javascript : calculate('6')"></input>
+            <input class="key" value="X" onclick="javascript : calculate('X')"></input>
+            <input class="key" value="1" onclick="javascript : calculate('1')"></input>
+            <input class="key" value="2" onclick="javascript : calculate('2')"></input>
+            <input class="key" value="3" onclick="javascript : calculate('3')"></input>
+            <input class="key" value="/" onclick="javascript : calculate('/')"></input>
+            <input class="key" value="0" onclick="javascript : calculate('0')"></input>
+            <input class="key" value="&plusmn;" onclick="javascript : calculate('\u00b1')"></input>
+            <input class="key" value="," onclick="javascript : calculate(',')"></input>
+            <input class="key" value="=" onclick="javascript : calculate('=')"></input>
+        </div>
+    </div>
+    <div class="form">
+        <form>
+            <label for="bg_color_input">Background Color :</label>
+            <input name="bg_color_input" type="color" id="bg_color_input" value="#ffa500">
+            <br>
+            <label for="calc_bg_color_input">Calculator Background Color :</label>
+            <input name="calc_bg_color_input" type="color" id="calc_bg_color_input" value="#E3E3E3">
+            <br>
+            <label for="key_bg_color_input">Key Background Color :</label>
+            <input name="key_bg_color_input" type="color" id="key_bg_color_input" value="#D2D2D2">
+            <br>
+            <br>
+            <label for="bg_image_input">Choisi un fond d'écran :</label>
+            <input type="file" id="bg_image_input" name="bg_image_input" accept="image/*">
+            
+        </form>
+    </div>
+</body>
+<script src="calculette.js"></script>
+</html>
